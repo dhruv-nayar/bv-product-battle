@@ -1,0 +1,69 @@
+div.search-panel{
+    color:#fff;
+    width:96%;
+    height:50px;
+    background-color:#1b4e59;
+    padding:2%;
+    min-height:50px;
+}
+
+#searchbox
+{
+    
+    width: 100%;
+    height: 30px;
+    min-height:30px;
+    overflow: hidden; /* Clear floats */
+}
+
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 25px;
+    width: 88%;
+    border: 1px solid #a4c3ca;
+    background: #f1f1f1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    float:left;
+    margin-right:1px;
+    font-size:12;            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #CBD368;
+    /*background-image: linear-gradient(#95d788, #6cbb6b);  */ 
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 27px;
+    width: 10%;
+    font-size:14;
+    cursor: pointer;
+    padding-left:5px;
+    color: #1b4e59;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    float:left;
+}
+
+#submit:hover {       
+    background-color: #CBD468;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
