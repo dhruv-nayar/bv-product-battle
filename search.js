@@ -5,9 +5,10 @@ var html;
 
 window.generateResults = function(){
 	resultsPanel.innerHTML = "";
-	numResults = parseInt(document.getElementById("search").value);
-	if (numResults == 0) {
-	    document.getElementById("txtHint").innerHTML="";
+	search = document.getElementById("search").value;
+	if (search == "") {
+	    document.getElementById("resultsPanel").innerHTML="";
+	    alert('hi');
 	    return;
 	  } 
 	  if (window.XMLHttpRequest) {
@@ -21,13 +22,13 @@ window.generateResults = function(){
 	      resultsPanel.innerHTML=xmlhttp.responseText;
 	    }
 	  }
-  xmlhttp.open("GET","get_results.php?q="+numResults, true);
+  xmlhttp.open("GET","get_results.php?q="+search, true);
   xmlhttp.send();
 }
 
 
-window.checkEnter = function(e){
-	if (e.keyCode == 13) {
+window.checkEnter = function(event){
+	if (event.keyCode == 13) {
             generateResults();
          }
 }

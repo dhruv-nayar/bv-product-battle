@@ -1,7 +1,7 @@
 <div class = "search-panel">
 	<form id="searchbox" >
-	    <input id="search" type="text" placeholder="Type here to search">
-	    <input id="submit" onkeydown = "checkEnter()" onclick = "generateResults()"value="Search">
+	    <input id="search" onkeypress = "checkEnter(event)" type="text" placeholder="Type here to search">
+	    <input id="submit" onclick = "generateResults()"value="Search">
 	</form>
 </div>
 
